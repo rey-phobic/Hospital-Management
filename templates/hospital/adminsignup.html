@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin</title>
+  <link rel="icon" href="static/images/favicon.ico">
+  <style type="text/css">
+    body {
+      color: #aa082e;
+      background-color: #b6bde7;
+      font-family: 'Roboto', sans-serif;
+      background-image: url(static/images/img2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 150%;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .note {
+      text-align: center;
+      height: 80px;
+      background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+      color: #fff;
+      font-weight: bold;
+      line-height: 80px;
+    }
+
+    .form-content {
+      padding: 5%;
+      border: 1px solid #ced4da;
+      border-radius:1.5rem ;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-control {
+      border-radius: 1.5rem;
+    }
+
+     .btnSubmit {
+      border: none;
+      border-radius: 1.5rem;
+      padding: 1%;
+      width: 20%;
+      cursor: pointer;
+      background: #0062cc;
+      color: #fff;
+      margin-left: 40%;
+      background-color: #142231;
+    } 
+
+    /* .btnSubmit:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: rgb(109, 115, 116);
+    transition: all 0.3s ease;
+} */
+
+    /* .btnSubmit:hover{
+      color: white;
+    } */
+
+    /* .btnSubmit:hover:after{
+    top: 10%;
+    height: 100%;
+} */
+
+ /* .btnSubmit {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #436275);
+  background-image: -moz-linear-gradient(top, #000000, #436275);
+  background-image: -ms-linear-gradient(top, #000000, #436275);
+  background-image: -o-linear-gradient(top, #000000, #436275);
+  background-image: linear-gradient(to bottom, #000000, #436275);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1px 11px #470a47;
+  -moz-box-shadow: 0px 1px 11px #470a47;
+  box-shadow: 0px 1px 11px #470a47;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}  */
+
+.btnSubmit:hover {
+  background: #5c5f61;
+  background-image: -webkit-linear-gradient(top, #5c5f61, #879096);
+  background-image: -moz-linear-gradient(top, #5c5f61, #879096);
+  background-image: -ms-linear-gradient(top, #5c5f61, #879096);
+  background-image: -o-linear-gradient(top, #5c5f61, #879096);
+  background-image: linear-gradient(to bottom, #5c5f61, #879096);
+  text-decoration: none;
+}
+
+
+  </style>
+
+</head>
+
+
+<body style="margin-bottom: 0;">
+  {% include "hospital/navbar.html" %}
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+  <!--- signup page for admin by admin ---------->
+  <form method="post">
+    {% csrf_token %}
+    <div class="container register-form" style="padding-bottom: 100px;">
+      <div class="form">
+        <div class="note" style="border-radius:1.5rem ;">
+          <p>Add New Admin To Hospital</p>
+        </div>
+
+        <div class="form-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                {% render_field form.first_name class="form-control" placeholder="First Name" %}
+              </div>
+              <div class="form-group">
+                {% render_field form.username class="form-control" placeholder="Username" %}
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                {% render_field form.last_name class="form-control" placeholder="Last Name" %}
+              </div>
+              <div class="form-group">
+                {% render_field form.password class="form-control" placeholder="Password" %}
+              </div>
+
+            </div>
+          </div>
+          <button type="submit" class="btnSubmit" >Submit</button>
+          <div class="text-center" style="color: white;">Already have an account? <a href="adminlogin">Login here</a></div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  {% include "hospital/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="static/images/favicon.ico">
+
+<style>
+  
+  a{
+    text-decoration: none !important;
+  }
+
+  .container{
+    height: 235px;
+  }
+  .main{
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .cardio{
+    border: red;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    margin-left: 132px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+  }
+ .h-c{
+  margin-left: 132px;
+  color: #0082a8;
+ }
+
+  .brain{
+    border: red;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    margin-left: 147px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+  }
+  .h-n{
+    margin-left: 147px;
+    color: #0082a8;
+  }
+
+  .ortho{
+    border: red;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    margin-left: 183px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+  }
+
+.h-o{
+  margin-left: 183px;
+  color: #0082a8;
+}
+
+  .stomach{
+    border: red;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    margin-left: 70px;
+    margin-right: 40px;
+    margin-bottom: 6px;
+  }
+.h-g{
+  margin-left: 57px;
+  color: #0082a8;
+}
+
+
+
+  .col-2{
+     margin-left:10% ;
+  }
+
+  .col-3{
+     margin-left:1% ;
+  }
+
+  .col-4{
+    margin-left: 5%;
+  }
+
+
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body style="margin-bottom: 0;">
+  {% include "hospital/navbar.html" %}
+  <br><br>
+<section class="main">
+<div class="container">
+  <div class="title">
+    <h2 style="text-align: center; font-family: 'Merriweather', serif;">Centres of Excellence</h2>
+  </div>
+  <br>
+  <div class="row" >
+      <div class="col-1">
+        <a href="#sec-1"><img src="static/images/cardio1.png" alt="" class="cardio"><h5 class="h-c">Cardiology</h5></a>
+      </div>
+      
+      <div class="col-2">
+       <a href="#sec-2"><img src="static/images/brain.png" alt="" class="brain"><h5 class="h-n">Neurology</h5></a>
+      </div>
+
+      <div class="col-3">
+        <a href="#sec-3"><img src="static/images/ortho1.png" alt="" class="ortho"><h5 class="h-o">Orthopaedics</h5></a>
+      </div> 
+
+      <div class="col-4">
+        <a href="#sec-4"><img src="static/images/stomach.png" alt="" class="stomach"><h5 class="h-g">Gastroenterology</h5></a>
+      </div>
+  </div>
+</div>
+
+<!-- </section>
+
+<section id="sec-1"
+style="padding-bottom: 80px; padding-top: 30px; background-color: #dae3ea;">
+
+    <div  style="border: 1px solid black; height:400px; width: 600px; margin-left:30%; ">
+       <img src="static/images/heart-1.jpg" alt="" style="width: 100%;">
+    </div >
+
+  
+</section>
+
+<section id="sec-2"
+style="padding-bottom: 80px; padding-top: 30px; background-color: #cbfdff;">
+
+    <div  style="border: 1px solid black; height:400px; width: 600px; margin-left: 30%; background-color: #c3d3e6; overflow: scroll; overflow: hidden; ">
+      <img src="static/images/mind.jpg.crdownload" alt="" style="width: 70%; height: 70%; ">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum aliquam molestias saepe eaque. Dolores suscipit nostrum tempore rerum eveniet facilis minima ad sint maxime a? Quo accusantium quidem consequuntur!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum aliquam molestias saepe eaque. Dolores suscipit nostrum tempore rerum eveniet facilis minima ad sint maxime a? Quo accusantium quidem consequuntur!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum aliquam molestias saepe eaque. Dolores suscipit nostrum tempore rerum eveniet facilis minima ad sint maxime a? Quo accusantium quidem consequuntur!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum aliquam molestias saepe eaque. Dolores suscipit nostrum tempore rerum eveniet facilis minima ad sint maxime a? Quo accusantium quidem consequuntur!</p>
+    </div >
+
+  
+</section>
+
+<section id="sec-3"
+style="padding-bottom: 80px; padding-top: 30px; background-color: #d4cac9;">
+
+    <div  style="border: 1px solid black; height:400px; width: 600px; margin-left: 30%; ">
+      <img src="static/images/heart-1.jpg" alt="" style="width: 100%;">
+    </div >
+
+  
+</section>
+
+<section id="sec-4"
+style="padding-bottom: 80px; padding-top: 30px; background-color: #d4cac9;">
+
+    <div  style="border: 1px solid black; height:400px; width: 600px; margin-left: 30%x; ">
+      <img src="static/images/heart-1.jpg" alt="" style="width: 100%;">
+    </div >
+
+  
+</section> -->
+
+
+<div style=" margin-right: 110px; margin-left: 100px; height:600px;">
+    <h3>Our Values</h3>
+    <hr style="border: 0.5px solid #cfcfcf;">
+  <div style=" height: 40%; margin-bottom: 30px; ">
+    <div style="border: 1px solid #87b1bd; width:610px; height:250px; border-radius: 10px; float: left; margin-right: 80px; box-shadow: 5px 10px #77b2c4;" >
+      <div style="border: 1px solid #87b1bd; height:100px; border-radius: 10px; background-color: #0082a8;" >
+         <span><img src="static/images/care-1.png" alt="care" style="height: 70px; width: 70px; margin-top: 15px; margin-left: 20px;"></span>
+         <span style="font-size: 30px; font-weight: 400; color: white; margin left:30px; position: absolute; margin-top: 20px;">COMPASSION</span>
+      
+      </div>
+      <div style="margin: 20px;">
+           <p style="font-family: 'Source Sans Pro', sans-serif;">We have a deeper level of patient understanding and are always empathetic to their needs. This encourages a culture of providing a higher standard of patient-centred care. We respect each other and our patients, and ensure that their needs are met with dignity. We rise to the occasion each time for we recognise the positive social impact we can create.</p>
+      </div>
+
+    </div>
+
+    <div style="border: 1px solid #87b1bd; width:610px; height:250px; border-radius: 10px;  float:left; box-shadow: 5px 10px #77b2c4;;"   >
+      <div style="border: 1px solid #87b1bd; height:100px; border-radius: 10px; background-color: #0082a8;" >
+        <span><img src="static/images/care-2.png" alt="care" style="height: 60px; width: 60px; margin-top: 15px; margin-left: 20px;"></span>
+        <span style="font-size: 30px; font-weight: 400; color: white; margin left:30px; position: absolute; margin-top: 20px;">EXCELLENCE</span>
+      </div>
+      <div style="margin: 20px;">
+        <p style="margin:5px; font-family: 'Source Sans Pro', sans-serif;"> We ask more of ourselves and are always passionate about achieving the highest standards of medical expertise and patient care. We understand that being the best is a continuous journey of becoming better versions of ourselves every day.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div style="border: 1px solid #87b1bd; width:610px; height:250px; border-radius: 10px; float: left; margin-right: 80px; box-shadow: 5px 10px #77b2c4;;" >
+      <div style="border: 1px solid #87b1bd; height:100px; border-radius: 10px; background-color: #0082a8;" >
+        <span><img src="static/images/care-3.png" alt="care" style="height: 60px; width: 60px; margin-top: 15px; margin-left: 20px;"></span>
+        <span style="font-size: 30px; font-weight: 400; color: white; margin-top: 20px; margin left:30px; position: absolute;">EFFICIENCY</span>
+      </div>
+      <div style="margin:20px; font-family: 'Source Sans Pro', sans-serif;">
+        <p>We create a responsive healing environment, by being nimble to the needs of our patients and delivering what they really need with precision and timing. We are focused yet fast, personal yet practical, advanced yet seamless in delivering the exact care our patients need.</p>
+      </div>
+
+    </div>
+
+    <div style="border: 1px solid #87b1bd; width:610px; height:250px; border-radius: 10px; float: left; box-shadow: 5px 10px #77b2c4;;" >
+      <div style="border: 1px solid #87b1bd; height:100px; border-radius: 10px; background-color: #0082a8;" >
+        <span><img src="static/images/care-4.png" alt="care" style="height: 60px; width: 60px; margin-top: 15px; margin-left: 20px;"></span>
+        <span style="font-size: 30px; font-weight: 400; color: white; margin-top: 20px; margin left:30px; position: absolute;">CONSISTENCY</span>
+      </div>
+      <div style="margin: 30px; font-family: 'Source Sans Pro', sans-serif;">
+        <p>We always deliver on our commitment and ensure the highest level of patient care is met at every stage, every time. We believe that only through consistency can we achieve our patients’ trust and fulfil our goals.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+  <!-- {% include "hospital/footer.html" %} -->
+</body>
+
+
+</html>
